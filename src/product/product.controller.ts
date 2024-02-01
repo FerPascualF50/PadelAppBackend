@@ -53,13 +53,13 @@ export class ProductController {
     })
   }
   
-  @Delete('/delete')
-  async deleteProduct(@Res() res, @Query('productID') productID) {
-    const productDeleted = await this.productService.deleteProduct(productID);
-    if (!productDeleted) throw new NotFoundException('Product Does not Exists');
-    return res.status(HttpStatus.OK).json({
-      message: 'Product Deleted Successfully',
-      productDeleted,
-    });
-  }
+  // @Delete('/delete')
+  // async deleteProduct(@Res() res, @Query('productID') productID) {
+  //   const productDeleted = await this.productService.deletedProduct(productID);
+  //   if (!productDeleted) throw new NotFoundException('Product Does not Exists');
+  //   return res.status(HttpStatus.OK).json({
+  //     message: 'Product Deleted Successfully',
+  //     productDeleted,
+  //   });
+  // }
 }

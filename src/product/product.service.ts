@@ -29,10 +29,10 @@ export class ProductService {
   }
 
 
-  async remove(id: string): Promise<Product> {
-    const deletedProduct = await this.productModel.findByIdAndRemove(id);
-    return deletedProduct;
-  }
+  // async remove(id: string): Promise<Product> {
+  //   const deletedProduct = await this.productModel.findByIdAndRemove(id);
+  //   return deletedProduct;
+  // }
 
   // async remove(productID: string): Promise<Product> {
   //   const deletedProduct = await this.productModel.findByIdAndDelete(productID);
